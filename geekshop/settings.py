@@ -142,7 +142,7 @@ AUTH_USER_MODEL = 'users.User'
 
 LOGIN_URL = '/users/login/'
 
-# DOMAIN_NAME = 'http://localhost:8000'
+DOMAIN_NAME = 'http://localhost:8000'
 
 EMAIL_HOST = 'smtp.mailtrap.io'
 EMAIL_HOST_USER = '66b829562cb356'
