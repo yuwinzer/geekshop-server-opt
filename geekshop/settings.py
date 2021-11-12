@@ -13,6 +13,10 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import _locale
 
+import environ
+env = environ.Env()
+environ.Env.read_env()
+
 
 _locale._getdefaultlocale = (lambda *args: ['en_US', 'utf8'])
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -23,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-gfna=8qv#)j^3ahtj)k%$q$x-!vik$7)%^fi1nbz%f*qc@6r(m'
+SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -44,8 +48,16 @@ INSTALLED_APPS = [
     'products',
     'users',
     'baskets',
-    'admins'
+    'admins',
+
+    'social_django',
 ]
+
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend',
+    'social_core.backends.vk.VKOAuth2',
+)
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -146,6 +158,9 @@ LOGIN_URL = '/users/login/'
 DOMAIN_NAME = 'http://localhost:8000'
 
 EMAIL_HOST = 'smtp.mailtrap.io'
-EMAIL_HOST_USER = '66b829562cb356'
-EMAIL_HOST_PASSWORD = 'd46d32ffabd8d3'
+EMAIL_HOST_USER = env('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
 EMAIL_PORT = '2525'
+
+SOCIAL_AUTH_VK_DAUTH2_KEY=env('SOCIAL_AUTH_VK_DAUTH2_KEY')
+SOCIAL_AUTH_VK_DAUTH2_SECRET=env('SOCIAL_AUTH_VK_DAUTH2_SECRET')
