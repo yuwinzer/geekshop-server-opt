@@ -5,9 +5,10 @@ from django.urls import reverse
 from django.contrib import auth, messages
 from django.contrib.auth.decorators import login_required
 
-from users.forms import UserLoginForm, UserRegistrationForm, UserProfileForm
+from users.forms import UserLoginForm, UserRegistrationForm, UserProfileForm, UserEditForm, UserProfileEditForm
 from baskets.models import Basket
 from users.models import User
+from django.db import transaction
 
 
 def login(request):
@@ -25,7 +26,7 @@ def login(request):
         form = UserLoginForm()
 
 
-    context = {'title': 'Geekshop - Авторизация',
+    context = {'title': 'Geek - Авторизация',
                'form': form
                }
     return render(request, 'users/login.html', context)
@@ -45,7 +46,7 @@ def registration(request):
                 return HttpResponseRedirect(reverse('users:login'))
     else:
         form = UserRegistrationForm()
-    context = {'title': 'GeekShop - Регистрация', 'form': form}
+    context = {'title': 'Geek - Регистрация', 'form': form}
     return render(request, 'users/registration.html', context)
 
 
@@ -63,7 +64,7 @@ def profile(request):
         form = UserProfileForm(instance=user)
 
     context = {
-        'title' : 'GeekShop - Профиль',
+        'title' : 'Geek - Профиль',
         'form' : form,
         'baskets' : Basket.objects.filter(user=user),
     }
@@ -72,6 +73,30 @@ def profile(request):
 def logout(request):
     auth.logout(request)
     return HttpResponseRedirect(reverse('index'))
+
+@transaction.atomic
+def edit(request):
+    title = 'редактирование'
+
+    if request.method == 'POST':
+        edit_form = UserEditForm(request.POST, request.FILES, instance=request.user)
+
+        profile_form = UserProfileEditForm(request.POST, instance=request.user.userprofile)
+
+        if edit_form.is_valid() and profile_form.is_valid():
+            edit_form.save()
+            return HttpResponseRedirect(reverse('auth:edit'))
+    else:
+        edit_form = UserEditForm(instance=request.user)
+        profile_form = UserProfileEditForm(instance=request.user.userprofile)
+
+    context = {
+        'title': title,
+        'edit_form': edit_form,
+        'profile_form': profile_form,
+    }
+
+    return render(request, 'users/edit.html', context)
 
 def send_verify_mail(user):
     verify_link = reverse('users:verify', args=[user.email, user.activation_key])
