@@ -29,6 +29,7 @@ urlpatterns = [
     path('users/', include('users.urls', namespace='users')),
     path('baskets/', include('baskets.urls', namespace='baskets')),
     path('admins/', include('admins.urls', namespace='admins')),
+    path('accounts/', include('allauth.urls')),  # for google auth
 ]
 
 if settings.DEBUG:
