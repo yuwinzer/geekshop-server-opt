@@ -3,5 +3,4 @@ __pycache__/
 /db.sqlite3
 media
 /reservdb.sqlite3
-!/geekshop/geekshop/.env
 /geekshop/.env

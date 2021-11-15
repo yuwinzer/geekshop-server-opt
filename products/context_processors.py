@@ -1,7 +1,7 @@
 from baskets.models import Basket
 
 
-def basket(request):
+def baskets(request):
     print(f'context processor basket works')
     basket = []
 
@@ -9,5 +9,5 @@ def basket(request):
        basket = Basket.objects.filter(user=request.user)
 
     return {
-       'basket': basket,
+       'baskets': basket,
     }
