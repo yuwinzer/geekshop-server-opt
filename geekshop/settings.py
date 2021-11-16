@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'users',
     'baskets',
     'admins',
+    'orders',
 
     'django.contrib.sites',
     'allauth',
