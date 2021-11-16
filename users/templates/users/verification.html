@@ -1,0 +1,43 @@
+{% extends 'users/base.html' %}
+
+{% block content %}
+    <main>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    {% if messages or form.errors %}
+                        <div class="alert {% if messages %} alert-success {% else %} alert-warning {% endif %} alert-dismissible fade show"
+                             role="alert"
+                             style="margin-top: 50px;">
+                            {% if messages %}
+                                {% for message in messages %}
+                                    <p>{{ message }}</p>
+                                {% endfor %}
+                            {% else %}
+                                {% for error in form.non_field_errors %}
+                                    <p>{{ error }}</p>
+                                {% endfor %}
+                            {% endif %}
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    {% endif %}
+                    {% if user %}
+                        <h3>Поздравляем!</h3>
+                        <br>
+                        <h4>Пользователь {{ user.username }} подтвержден.</h4>
+                    {% else %}
+                        <h3>Верификация не пройдена.</h3>
+                    {% endif %}
+                    <br>
+                    <button class="btn btn-round form-control">
+                        <a href="{% url 'index' %}" class="">
+                            На главную
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}
