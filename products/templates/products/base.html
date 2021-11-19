@@ -50,6 +50,16 @@
                         </li>
                     {% endif %}
                     <li class="nav-item">
+                        <a id="baskq" class="nav-link" href="{% url 'users:profile' %}">
+                            Корзина <span class="fas fa-shopping-bag"> {{ baskets.0.total_quantity }}</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'orders:orders_list' %}">
+                            Заказы
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="{% url 'users:logout' %}">Выйти <i
                                 class="fas fa-sign-out-alt"></i></a>
                     </li>
