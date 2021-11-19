@@ -34,6 +34,13 @@
             </div>
         </div>
         <button type="button" class="btn btn-success btn-lg float-right">Оформить</button>
+        <div class="row">
+            <div>
+                <a class="btn btn-success mt-5" href="{% url 'orders:orders_list' %}">
+                    К списку заказов
+                </a>
+            </div>
+        </div>
     {% else %}
         <h4 class="mt-3 align-items-center mb-3"> Корзина пуста </h4>
     {% endif %}
