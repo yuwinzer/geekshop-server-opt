@@ -1,5 +1,6 @@
 from django.conf import settings
 from django.db import models
+from django.contrib.admin import display
 
 from products.models import Product
 
@@ -24,6 +25,7 @@ class Order(models.Model):
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE,
+        verbose_name='пользователь',
     )
 
     created = models.DateTimeField(verbose_name='создан', auto_now_add=True)
@@ -40,6 +42,7 @@ class Order(models.Model):
     def __str__(self):
         return f'Заказ: {self.id}'
 
+    @display(description='товаров в заказе')
     def get_total_quantity(self):
         items = self.orderitems.select_related()
         return sum(list(map(lambda x: x.quantity, items)))
@@ -48,6 +51,7 @@ class Order(models.Model):
         items = self.orderitems.select_related()
         return items.count()
 
+    @display(description='общая стоимость')
     def get_total_cost(self):
         items = self.orderitems.select_related()
         return sum(list(map(lambda x: x.quantity * x.product.price, items)))
@@ -78,5 +82,6 @@ class OrderItem(models.Model):
     def get_item(pk):
         return OrderItem.objects.filter(pk=pk).first()
 
+    @display(description='товыры в заказе')
     def get_product_cost(self):
         return self.product.price * self.quantity
