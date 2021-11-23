@@ -13,6 +13,10 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import _locale
 
+import environ
+env = environ.Env()
+environ.Env.read_env()
+
 
 _locale._getdefaultlocale = (lambda *args: ['en_US', 'utf8'])
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -23,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-gfna=8qv#)j^3ahtj)k%$q$x-!vik$7)%^fi1nbz%f*qc@6r(m'
+SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -44,8 +48,20 @@ INSTALLED_APPS = [
     'products',
     'users',
     'baskets',
-    'admins'
+    'admins',
+
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.google',
 ]
+
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend'
+)
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -55,6 +71,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'social_django.middleware.SocialAuthExceptionMiddleware',
 ]
 
 ROOT_URLCONF = 'geekshop.urls'
@@ -70,7 +87,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'products.context_processors.basket',
+                'products.context_processors.baskets',
             ],
         },
     },
@@ -143,9 +160,27 @@ AUTH_USER_MODEL = 'users.User'
 
 LOGIN_URL = '/users/login/'
 
+
+SITE_ID = 3  # for google auth
+
+LOGIN_REDIRECT_URL = '/'  # for google auth
+LOGOUT_REDIRECT_URL = '/'  # for google auth 127.0.0.1:8000
+
 DOMAIN_NAME = 'http://localhost:8000'
 
 EMAIL_HOST = 'smtp.mailtrap.io'
-EMAIL_HOST_USER = '66b829562cb356'
-EMAIL_HOST_PASSWORD = 'd46d32ffabd8d3'
+EMAIL_HOST_USER = env('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
 EMAIL_PORT = '2525'
+
+SOCIALACCOUNT_PROVIDERS = {
+    'google': {
+        'SCOPE': [
+            'profile',
+            'email',
+        ],
+        'AUTH_PARAMS': {
+            'access_type': 'online',
+        }
+    }
+}
