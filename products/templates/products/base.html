@@ -50,6 +50,16 @@
                         </li>
                     {% endif %}
                     <li class="nav-item">
+                        <a id="baskq" class="nav-link" href="{% url 'users:profile' %}">
+                            Корзина <span class="fas fa-shopping-bag"> {{ baskets.0.total_quantity }}</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'orders:orders_list' %}">
+                            Заказы
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="{% url 'users:logout' %}">Выйти <i
                                 class="fas fa-sign-out-alt"></i></a>
                     </li>
@@ -68,6 +78,8 @@
 
 {% block footer %} {% endblock %}
 
+
+
 <!-- Bootstrap core JavaScript -->
 <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
 <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
@@ -76,5 +88,6 @@
 <script src="{% static 'vendor/fontawesome/fontawesome-icons.js' %}" crossorigin="anonymous"></script>
 
 <script src="{% static 'js/basket.js' %}"></script>
+{% block js %} {% endblock %}
 </body>
 </html>
