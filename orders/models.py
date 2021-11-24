@@ -91,6 +91,7 @@ class OrderItem(models.Model):
     def get_item(pk):
         return OrderItem.objects.filter(pk=pk).first()
 
+
     @display(description='товары в заказе')
     def get_product_cost(self):
         return self.product.price * self.quantity
