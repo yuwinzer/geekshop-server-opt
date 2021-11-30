@@ -1,0 +1,1529 @@
+events: Ticks
+summary: 3
+fl=<frozen importlib._bootstrap>
+fn=parent
+398 0
+cfn=<method 'rpartition' of 'str' objects>
+calls=3 0
+398 0
+
+fl=C:\Program Files\Python39\lib\abc.py
+fn=__instancecheck__
+117 0
+cfn=<built-in method _abc._abc_instancecheck>
+calls=1 0
+117 0
+
+fl=C:\Program Files\Python39\lib\ntpath.py
+fn=_get_bothseps
+34 0
+cfn=<built-in method builtins.isinstance>
+calls=3 0
+34 0
+
+fl=C:\Program Files\Python39\lib\ntpath.py
+fn=normcase
+44 0
+cfn=<built-in method nt.fspath>
+calls=4 0
+44 0
+cfn=<method 'replace' of 'str' objects>
+calls=4 0
+44 0
+cfn=<method 'lower' of 'str' objects>
+calls=4 0
+44 0
+cfn=<built-in method builtins.isinstance>
+calls=4 0
+44 0
+
+fl=C:\Program Files\Python39\lib\ntpath.py
+fn=isabs
+61 0
+cfl=C:\Program Files\Python39\lib\ntpath.py
+cfn=splitdrive
+calls=1 124
+61 0
+cfn=<built-in method nt.fspath>
+calls=1 0
+61 0
+cfn=<built-in method builtins.len>
+calls=1 0
+61 0
+cfn=<method 'replace' of 'str' objects>
+calls=1 0
+61 0
+cfl=C:\Program Files\Python39\lib\ntpath.py
+cfn=_get_bothseps
+calls=1 34
+61 0
+cfn=<method 'startswith' of 'str' objects>
+calls=1 0
+61 0
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+61 0
+
+fl=C:\Program Files\Python39\lib\ntpath.py
+fn=join
+77 0
+cfl=C:\Program Files\Python39\lib\ntpath.py
+cfn=splitdrive
+calls=4 124
+77 0
+cfn=<built-in method nt.fspath>
+calls=2 0
+77 0
+cfn=<built-in method builtins.isinstance>
+calls=2 0
+77 0
+
+fl=C:\Program Files\Python39\lib\ntpath.py
+fn=splitdrive
+124 0
+cfn=<built-in method nt.fspath>
+calls=11 0
+124 0
+cfn=<built-in method builtins.len>
+calls=11 0
+124 0
+cfn=<method 'replace' of 'str' objects>
+calls=11 0
+124 0
+cfn=<built-in method builtins.isinstance>
+calls=11 0
+124 0
+
+fl=C:\Program Files\Python39\lib\ntpath.py
+fn=split
+180 0
+cfl=C:\Program Files\Python39\lib\ntpath.py
+cfn=splitdrive
+calls=2 124
+180 0
+cfn=<built-in method nt.fspath>
+calls=2 0
+180 0
+cfn=<built-in method builtins.len>
+calls=2 0
+180 0
+cfn=<method 'rstrip' of 'str' objects>
+calls=2 0
+180 0
+cfl=C:\Program Files\Python39\lib\ntpath.py
+cfn=_get_bothseps
+calls=2 34
+180 0
+
+fl=C:\Program Files\Python39\lib\ntpath.py
+fn=basename
+214 0
+cfl=C:\Program Files\Python39\lib\ntpath.py
+cfn=split
+calls=1 180
+214 0
+
+fl=C:\Program Files\Python39\lib\ntpath.py
+fn=normpath
+450 0
+cfn=<method 'lstrip' of 'str' objects>
+calls=4 0
+450 0
+cfl=C:\Program Files\Python39\lib\ntpath.py
+cfn=splitdrive
+calls=4 124
+450 0
+cfn=<method 'join' of 'str' objects>
+calls=4 0
+450 0
+cfn=<built-in method nt.fspath>
+calls=4 0
+450 0
+cfn=<method 'split' of 'str' objects>
+calls=4 0
+450 0
+cfn=<built-in method builtins.len>
+calls=25 0
+450 0
+cfn=<method 'replace' of 'str' objects>
+calls=4 0
+450 0
+cfn=<method 'startswith' of 'str' objects>
+calls=8 0
+450 0
+cfn=<built-in method builtins.isinstance>
+calls=4 0
+450 0
+
+fl=C:\Program Files\Python39\lib\ntpath.py
+fn=abspath
+524 0
+cfn=<built-in method nt._getfullpathname>
+calls=4 0
+524 0
+cfl=C:\Program Files\Python39\lib\ntpath.py
+cfn=normpath
+calls=4 450
+524 0
+
+fl=C:\Program Files\Python39\lib\_collections_abc.py
+fn=get
+760 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\utils\datastructures.py
+cfn=__getitem__
+calls=1 315
+760 0
+
+fl=C:\Program Files\Python39\lib\_collections_abc.py
+fn=__contains__
+767 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\utils\datastructures.py
+cfn=__getitem__
+calls=2 315
+767 0
+
+fl=C:\Program Files\Python39\lib\_collections_abc.py
+fn=items
+779 0
+cfl=C:\Program Files\Python39\lib\_collections_abc.py
+cfn=__init__
+calls=1 802
+779 0
+
+fl=C:\Program Files\Python39\lib\_collections_abc.py
+fn=__init__
+802 0
+
+fl=C:\Program Files\Python39\lib\_collections_abc.py
+fn=__len__
+805 0
+cfn=<built-in method builtins.len>
+calls=1 0
+805 0
+
+fl=C:\Program Files\Python39\lib\_collections_abc.py
+fn=__iter__
+849 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\utils\datastructures.py
+cfn=__iter__
+calls=1 328
+849 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\utils\datastructures.py
+cfn=<genexpr>
+calls=5 329
+849 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\utils\datastructures.py
+cfn=__getitem__
+calls=4 315
+849 0
+
+fl=C:\Program Files\Python39\lib\genericpath.py
+fn=exists
+16 0
+cfn=<built-in method nt.stat>
+calls=1 0
+16 0
+
+fl=C:\Program Files\Python39\lib\genericpath.py
+fn=getsize
+48 0
+cfn=<built-in method nt.stat>
+calls=1 0
+48 0
+
+fl=C:\Program Files\Python39\lib\genericpath.py
+fn=_splitext
+121 0
+cfn=<method 'rfind' of 'str' objects>
+calls=2 0
+121 0
+
+fl=C:\Program Files\Python39\lib\threading.py
+fn=current_thread
+1338 0
+cfn=<built-in method _thread.get_ident>
+calls=3 0
+1338 0
+
+fl=C:\Program Files\Python39\lib\asyncio\tasks.py
+fn=current_task
+34 0
+cfn=<built-in method _asyncio.get_running_loop>
+calls=3 0
+34 0
+
+fl=C:\Program Files\Python39\lib\posixpath.py
+fn=splitext
+117 0
+cfl=C:\Program Files\Python39\lib\genericpath.py
+cfn=_splitext
+calls=1 121
+117 0
+cfn=<built-in method nt.fspath>
+calls=1 0
+117 0
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+117 0
+
+fl=C:\Program Files\Python39\lib\posixpath.py
+fn=normpath
+334 0
+cfn=<method 'join' of 'str' objects>
+calls=2 0
+334 0
+cfn=<built-in method nt.fspath>
+calls=2 0
+334 0
+cfn=<method 'split' of 'str' objects>
+calls=2 0
+334 0
+cfn=<method 'startswith' of 'str' objects>
+calls=2 0
+334 0
+cfn=<built-in method builtins.isinstance>
+calls=2 0
+334 0
+cfn=<method 'append' of 'list' objects>
+calls=2 0
+334 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\asgiref\sync.py
+fn=get_current_task
+493 0
+cfn=<built-in method builtins.hasattr>
+calls=3 0
+493 0
+cfl=C:\Program Files\Python39\lib\asyncio\tasks.py
+cfn=current_task
+calls=3 34
+493 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\asgiref\local.py
+fn=_get_context_id
+46 0
+cfl=C:\Program Files\Python39\lib\threading.py
+cfn=current_thread
+calls=3 1338
+46 0
+cfl=<frozen importlib._bootstrap>
+cfn=parent
+calls=3 398
+46 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\asgiref\sync.py
+cfn=get_current_task
+calls=3 493
+46 0
+cfn=<built-in method sys.getrecursionlimit>
+calls=1 0
+46 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\asgiref\local.py
+fn=_get_storage
+82 0
+cfn=<built-in method builtins.hasattr>
+calls=3 0
+82 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\asgiref\local.py
+cfn=_get_context_id
+calls=3 46
+82 0
+cfn=<built-in method builtins.getattr>
+calls=3 0
+82 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\asgiref\local.py
+fn=__getattr__
+101 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\asgiref\local.py
+cfn=_get_storage
+calls=2 82
+101 0
+cfn=<method '__exit__' of '_thread.RLock' objects>
+calls=2 0
+101 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\asgiref\local.py
+fn=__setattr__
+109 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\asgiref\local.py
+cfn=_get_storage
+calls=1 82
+109 0
+cfn=<method '__exit__' of '_thread.RLock' objects>
+calls=1 0
+109 0
+
+fl=C:\Program Files\Python39\lib\pathlib.py
+fn=parse_parts
+64 0
+cfn=<method 'split' of 'str' objects>
+calls=1 0
+64 0
+cfn=<method 'replace' of 'str' objects>
+calls=1 0
+64 0
+cfn=<method 'reverse' of 'list' objects>
+calls=1 0
+64 0
+cfn=<built-in method sys.intern>
+calls=6 0
+64 0
+cfl=C:\Program Files\Python39\lib\pathlib.py
+cfn=splitroot
+calls=1 155
+64 0
+cfn=<method 'append' of 'list' objects>
+calls=7 0
+64 0
+
+fl=C:\Program Files\Python39\lib\pathlib.py
+fn=splitroot
+155 0
+cfn=<method 'lstrip' of 'str' objects>
+calls=1 0
+155 0
+
+fl=C:\Program Files\Python39\lib\pathlib.py
+fn=_parse_args
+682 0
+cfn=<built-in method nt.fspath>
+calls=1 0
+682 0
+cfl=C:\Program Files\Python39\lib\pathlib.py
+cfn=parse_parts
+calls=1 64
+682 0
+cfn=<built-in method builtins.isinstance>
+calls=2 0
+682 0
+cfn=<method 'append' of 'list' objects>
+calls=1 0
+682 0
+
+fl=C:\Program Files\Python39\lib\pathlib.py
+fn=_from_parts
+702 0
+cfl=C:\Program Files\Python39\lib\pathlib.py
+cfn=_parse_args
+calls=1 682
+702 0
+cfn=<built-in method __new__ of type object at 0x00007FFBF790CC60>
+calls=1 0
+702 0
+
+fl=C:\Program Files\Python39\lib\pathlib.py
+fn=_format_parsed_parts
+725 0
+cfn=<method 'join' of 'str' objects>
+calls=1 0
+725 0
+
+fl=C:\Program Files\Python39\lib\pathlib.py
+fn=__str__
+742 0
+cfl=C:\Program Files\Python39\lib\pathlib.py
+cfn=_format_parsed_parts
+calls=1 725
+742 0
+
+fl=C:\Program Files\Python39\lib\pathlib.py
+fn=__fspath__
+752 0
+cfl=C:\Program Files\Python39\lib\pathlib.py
+cfn=__str__
+calls=7 742
+752 0
+
+fl=C:\Program Files\Python39\lib\pathlib.py
+fn=__new__
+1079 0
+cfl=C:\Program Files\Python39\lib\pathlib.py
+cfn=_init
+calls=1 1089
+1079 0
+cfl=C:\Program Files\Python39\lib\pathlib.py
+cfn=_from_parts
+calls=1 702
+1079 0
+
+fl=C:\Program Files\Python39\lib\pathlib.py
+fn=_init
+1089 0
+
+fl=C:\Program Files\Python39\lib\pathlib.py
+fn=_opener
+1118 0
+cfn=<built-in method nt.open>
+calls=1 0
+1118 0
+
+fl=C:\Program Files\Python39\lib\pathlib.py
+fn=stat
+1227 0
+cfn=<built-in method nt.stat>
+calls=3 0
+1227 1
+
+fl=C:\Program Files\Python39\lib\pathlib.py
+fn=open
+1246 0
+cfn=<built-in method io.open>
+calls=1 0
+1246 0
+
+fl=C:\Program Files\Python39\lib\pathlib.py
+fn=exists
+1419 0
+cfl=C:\Program Files\Python39\lib\pathlib.py
+cfn=stat
+calls=1 1227
+1419 0
+
+fl=C:\Program Files\Python39\lib\pathlib.py
+fn=is_dir
+1434 0
+cfl=C:\Program Files\Python39\lib\pathlib.py
+cfn=stat
+calls=1 1227
+1434 0
+cfn=<built-in method _stat.S_ISDIR>
+calls=1 0
+1434 0
+
+fl=C:\Program Files\Python39\lib\urllib\parse.py
+fn=unquote
+644 0
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+644 0
+
+fl=C:\Program Files\Python39\lib\urllib\parse.py
+fn=_splittype
+1034 0
+cfn=<method 'groups' of 're.Match' objects>
+calls=1 0
+1034 0
+cfn=<method 'match' of 're.Pattern' objects>
+calls=1 0
+1034 0
+cfn=<method 'lower' of 'str' objects>
+calls=1 0
+1034 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\dispatch\dispatcher.py
+fn=_make_id
+12 0
+cfn=<built-in method builtins.hasattr>
+calls=1 0
+12 0
+cfn=<built-in method builtins.id>
+calls=1 0
+12 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\dispatch\dispatcher.py
+fn=<listcomp>
+180 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\db\__init__.py
+cfn=close_old_connections
+calls=1 36
+180 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\db\__init__.py
+cfn=reset_queries
+calls=1 26
+180 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\dispatch\dispatcher.py
+fn=send
+159 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\dispatch\dispatcher.py
+cfn=<listcomp>
+calls=1 180
+159 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\dispatch\dispatcher.py
+cfn=_live_receivers
+calls=1 234
+159 0
+cfn=<method 'get' of 'dict' objects>
+calls=1 0
+159 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\dispatch\dispatcher.py
+fn=_clear_dead_receivers
+225 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\dispatch\dispatcher.py
+fn=_live_receivers
+234 0
+cfn=<method '__exit__' of '_thread.lock' objects>
+calls=1 0
+234 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\dispatch\dispatcher.py
+cfn=_make_id
+calls=1 12
+234 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\dispatch\dispatcher.py
+cfn=_clear_dead_receivers
+calls=1 225
+234 0
+cfn=<built-in method builtins.isinstance>
+calls=2 0
+234 0
+cfn=<method 'append' of 'list' objects>
+calls=4 0
+234 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\utils\connection.py
+fn=__getitem__
+56 0
+cfn=<built-in method builtins.getattr>
+calls=2 0
+56 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\utils\connection.py
+fn=__iter__
+72 0
+cfn=<built-in method builtins.iter>
+calls=2 0
+72 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\utils\connection.py
+fn=<listcomp>
+76 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\utils\connection.py
+cfn=__getitem__
+calls=2 56
+76 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\utils\connection.py
+fn=all
+75 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\utils\connection.py
+cfn=__iter__
+calls=2 72
+75 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\utils\connection.py
+cfn=<listcomp>
+calls=2 76
+75 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\db\__init__.py
+fn=reset_queries
+26 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\utils\connection.py
+cfn=all
+calls=1 75
+26 0
+cfn=<method 'clear' of 'collections.deque' objects>
+calls=1 0
+26 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\db\__init__.py
+fn=close_old_connections
+36 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\utils\connection.py
+cfn=all
+calls=1 75
+36 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\db\backends\base\base.py
+cfn=close_if_unusable_or_obsolete
+calls=1 502
+36 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\urls\base.py
+fn=set_script_prefix
+98 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\asgiref\local.py
+cfn=__setattr__
+calls=1 109
+98 0
+cfn=<method 'endswith' of 'str' objects>
+calls=1 0
+98 0
+
+fl=C:\Program Files\Python39\lib\http\cookies.py
+fn=__init__
+481 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\http\request.py
+fn=_set_content_type_params
+101 0
+cfl=C:\Program Files\Python39\lib\cgi.py
+cfn=parse_header
+calls=1 227
+101 0
+cfn=<method 'get' of 'dict' objects>
+calls=1 0
+101 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\http\response.py
+fn=_convert_to_charset
+41 0
+cfn=<method 'encode' of 'str' objects>
+calls=8 0
+41 0
+cfn=<built-in method builtins.isinstance>
+calls=32 0
+41 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\http\response.py
+fn=__init__
+30 0
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+30 0
+cfn=<method 'items' of 'dict' objects>
+calls=1 0
+30 0
+
+fl=C:\Program Files\Python39\lib\cgi.py
+fn=_parseparam
+215 0
+cfn=<method 'strip' of 'str' objects>
+calls=1 0
+215 0
+cfn=<built-in method builtins.len>
+calls=1 0
+215 0
+cfn=<method 'find' of 'str' objects>
+calls=1 0
+215 0
+
+fl=C:\Program Files\Python39\lib\cgi.py
+fn=parse_header
+227 0
+cfl=C:\Program Files\Python39\lib\cgi.py
+cfn=_parseparam
+calls=2 215
+227 0
+
+fl=C:\Program Files\Python39\lib\email\utils.py
+fn=_format_timetuple_and_zone
+117 0
+
+fl=C:\Program Files\Python39\lib\email\utils.py
+fn=formatdate
+126 0
+cfl=C:\Program Files\Python39\lib\email\utils.py
+cfn=format_datetime
+calls=1 155
+126 0
+cfn=<built-in method fromtimestamp>
+calls=1 0
+126 0
+
+fl=C:\Program Files\Python39\lib\email\utils.py
+fn=format_datetime
+155 0
+cfl=C:\Program Files\Python39\lib\email\utils.py
+cfn=_format_timetuple_and_zone
+calls=1 117
+155 0
+cfn=<method 'timetuple' of 'datetime.datetime' objects>
+calls=1 0
+155 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\utils\encoding.py
+fn=repercent_broken_unicode
+226 0
+cfn=<method 'decode' of 'bytes' objects>
+calls=2 0
+226 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\utils\http.py
+fn=http_date
+142 0
+cfl=C:\Program Files\Python39\lib\email\utils.py
+cfn=formatdate
+calls=1 126
+142 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\utils\datastructures.py
+fn=__getitem__
+315 0
+cfn=<method 'lower' of 'str' objects>
+calls=7 0
+315 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\utils\datastructures.py
+fn=__len__
+318 0
+cfn=<built-in method builtins.len>
+calls=1 0
+318 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\utils\datastructures.py
+fn=<genexpr>
+329 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\utils\datastructures.py
+fn=__iter__
+328 0
+cfn=<method 'values' of 'dict' objects>
+calls=1 0
+328 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\http\response.py
+fn=__setitem__
+72 0
+cfn=<method 'lower' of 'str' objects>
+calls=4 0
+72 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\http\response.py
+cfn=_convert_to_charset
+calls=8 41
+72 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\http\response.py
+fn=__init__
+99 0
+cfl=C:\Program Files\Python39\lib\http\cookies.py
+cfn=__init__
+calls=1 481
+99 0
+cfl=C:\Program Files\Python39\lib\_collections_abc.py
+cfn=__contains__
+calls=2 767
+99 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\http\response.py
+cfn=__init__
+calls=1 30
+99 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\http\response.py
+cfn=__setitem__
+calls=1 72
+99 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\http\response.py
+fn=reason_phrase
+127 0
+cfn=<method 'get' of 'dict' objects>
+calls=1 0
+127 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\http\response.py
+fn=items
+186 0
+cfl=C:\Program Files\Python39\lib\_collections_abc.py
+cfn=items
+calls=1 779
+186 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\http\response.py
+fn=__init__
+399 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\http\response.py
+cfn=streaming_content
+calls=1 416
+399 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\http\response.py
+cfn=__init__
+calls=1 99
+399 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\http\response.py
+fn=streaming_content
+416 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\http\response.py
+cfn=_set_streaming_content
+calls=1 444
+416 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\http\response.py
+fn=_set_streaming_content
+420 0
+cfn=<built-in method builtins.hasattr>
+calls=1 0
+420 0
+cfn=<built-in method builtins.iter>
+calls=1 0
+420 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\http\response.py
+fn=__init__
+439 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\http\response.py
+cfn=__init__
+calls=1 399
+439 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\http\response.py
+fn=_set_streaming_content
+444 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\http\response.py
+cfn=_set_streaming_content
+calls=1 420
+444 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\http\response.py
+cfn=set_headers
+calls=1 456
+444 0
+cfn=<built-in method builtins.hasattr>
+calls=2 0
+444 0
+cfn=<built-in method builtins.iter>
+calls=1 0
+444 0
+cfn=<method 'append' of 'list' objects>
+calls=1 0
+444 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\http\response.py
+fn=set_headers
+456 0
+cfl=C:\Program Files\Python39\lib\ntpath.py
+cfn=basename
+calls=1 214
+456 0
+cfn=<method 'format' of 'str' objects>
+calls=2 0
+456 0
+cfl=C:\Program Files\Python39\lib\_collections_abc.py
+cfn=get
+calls=1 760
+456 0
+cfl=C:\Program Files\Python39\lib\genericpath.py
+cfn=getsize
+calls=1 48
+456 0
+cfl=C:\Program Files\Python39\lib\ntpath.py
+cfn=isabs
+calls=1 61
+456 0
+cfn=<method 'encode' of 'str' objects>
+calls=1 0
+456 0
+cfn=<method 'startswith' of 'str' objects>
+calls=1 0
+456 0
+cfn=<built-in method builtins.getattr>
+calls=1 0
+456 0
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+456 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\http\response.py
+cfn=__setitem__
+calls=2 72
+456 0
+
+fl=C:\Program Files\Python39\lib\mimetypes.py
+fn=guess_type
+97 0
+cfl=C:\Program Files\Python39\lib\urllib\parse.py
+cfn=_splittype
+calls=1 1034
+97 0
+cfl=C:\Program Files\Python39\lib\posixpath.py
+cfn=splitext
+calls=1 117
+97 0
+cfn=<built-in method nt.fspath>
+calls=1 0
+97 0
+
+fl=C:\Program Files\Python39\lib\mimetypes.py
+fn=guess_type
+272 0
+cfl=C:\Program Files\Python39\lib\mimetypes.py
+cfn=guess_type
+calls=1 97
+272 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\utils\_os.py
+fn=safe_join
+9 0
+cfl=C:\Program Files\Python39\lib\ntpath.py
+cfn=abspath
+calls=4 524
+9 0
+cfl=C:\Program Files\Python39\lib\ntpath.py
+cfn=join
+calls=2 77
+9 0
+cfl=C:\Program Files\Python39\lib\ntpath.py
+cfn=normcase
+calls=4 44
+9 0
+cfn=<method 'startswith' of 'str' objects>
+calls=2 0
+9 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\contrib\staticfiles\finders.py
+fn=find
+95 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\contrib\staticfiles\finders.py
+cfn=find_location
+calls=1 110
+95 0
+cfn=<method 'append' of 'list' objects>
+calls=1 0
+95 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\contrib\staticfiles\finders.py
+fn=find_location
+110 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\utils\_os.py
+cfn=safe_join
+calls=1 9
+110 0
+cfl=C:\Program Files\Python39\lib\genericpath.py
+cfn=exists
+calls=1 16
+110 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\contrib\staticfiles\finders.py
+fn=find
+257 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\contrib\staticfiles\finders.py
+cfn=find
+calls=1 95
+257 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\contrib\staticfiles\finders.py
+cfn=get_finders
+calls=2 279
+257 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\contrib\staticfiles\finders.py
+fn=get_finders
+279 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\db\backends\base\base.py
+fn=close_if_unusable_or_obsolete
+502 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\contrib\staticfiles\handlers.py
+fn=_should_handle
+32 0
+cfn=<method 'startswith' of 'str' objects>
+calls=1 0
+32 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\contrib\staticfiles\handlers.py
+fn=file_path
+40 0
+cfl=C:\Program Files\Python39\lib\nturl2path.py
+cfn=url2pathname
+calls=1 8
+40 0
+cfn=<built-in method builtins.len>
+calls=1 0
+40 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\contrib\staticfiles\handlers.py
+fn=serve
+47 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\contrib\staticfiles\handlers.py
+cfn=file_path
+calls=1 40
+47 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\contrib\staticfiles\views.py
+cfn=serve
+calls=1 15
+47 3
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\contrib\staticfiles\handlers.py
+fn=get_response
+51 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\contrib\staticfiles\handlers.py
+cfn=serve
+calls=1 47
+51 3
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\contrib\staticfiles\handlers.py
+fn=__call__
+74 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\core\handlers\wsgi.py
+cfn=__call__
+calls=1 129
+74 3
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\contrib\staticfiles\handlers.py
+cfn=_should_handle
+calls=1 32
+74 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\core\handlers\wsgi.py
+cfn=get_path_info
+calls=1 152
+74 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\contrib\staticfiles\views.py
+fn=serve
+15 0
+cfn=<method 'lstrip' of 'str' objects>
+calls=1 0
+15 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\contrib\staticfiles\finders.py
+cfn=find
+calls=1 257
+15 0
+cfl=C:\Program Files\Python39\lib\posixpath.py
+cfn=normpath
+calls=1 334
+15 0
+cfl=C:\Program Files\Python39\lib\ntpath.py
+cfn=split
+calls=1 180
+15 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\views\static.py
+cfn=serve
+calls=1 19
+15 2
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\views\static.py
+fn=serve
+19 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\utils\http.py
+cfn=http_date
+calls=1 142
+19 0
+cfn=<method 'lstrip' of 'str' objects>
+calls=1 0
+19 0
+cfl=C:\Program Files\Python39\lib\pathlib.py
+cfn=__str__
+calls=1 742
+19 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\utils\_os.py
+cfn=safe_join
+calls=1 9
+19 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\views\static.py
+cfn=was_modified_since
+calls=1 108
+19 0
+cfl=C:\Program Files\Python39\lib\mimetypes.py
+cfn=guess_type
+calls=1 272
+19 0
+cfl=C:\Program Files\Python39\lib\pathlib.py
+cfn=open
+calls=1 1246
+19 0
+cfl=C:\Program Files\Python39\lib\posixpath.py
+cfn=normpath
+calls=1 334
+19 0
+cfl=C:\Program Files\Python39\lib\pathlib.py
+cfn=exists
+calls=1 1419
+19 0
+cfl=C:\Program Files\Python39\lib\pathlib.py
+cfn=is_dir
+calls=1 1434
+19 0
+cfl=C:\Program Files\Python39\lib\pathlib.py
+cfn=__new__
+calls=1 1079
+19 0
+cfl=C:\Program Files\Python39\lib\pathlib.py
+cfn=stat
+calls=1 1227
+19 0
+cfn=<method 'get' of 'dict' objects>
+calls=1 0
+19 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\http\response.py
+cfn=__setitem__
+calls=1 72
+19 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\http\response.py
+cfn=__init__
+calls=1 439
+19 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\views\static.py
+fn=was_modified_since
+108 0
+
+fl=C:\Program Files\Python39\lib\nturl2path.py
+fn=url2pathname
+8 0
+cfn=<method 'join' of 'str' objects>
+calls=1 0
+8 0
+cfl=C:\Program Files\Python39\lib\urllib\parse.py
+cfn=unquote
+calls=1 644
+8 0
+cfn=<method 'split' of 'str' objects>
+calls=1 0
+8 0
+cfn=<method 'replace' of 'str' objects>
+calls=1 0
+8 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\core\handlers\wsgi.py
+fn=__init__
+17 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\core\handlers\wsgi.py
+fn=__init__
+65 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\http\request.py
+cfn=_set_content_type_params
+calls=1 101
+65 0
+cfn=<method 'upper' of 'str' objects>
+calls=1 0
+65 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\core\handlers\wsgi.py
+cfn=__init__
+calls=1 17
+65 0
+cfn=<method 'rstrip' of 'str' objects>
+calls=1 0
+65 0
+cfn=<method 'replace' of 'str' objects>
+calls=1 0
+65 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\core\handlers\wsgi.py
+cfn=get_script_name
+calls=1 159
+65 0
+cfn=<method 'get' of 'dict' objects>
+calls=1 0
+65 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\core\handlers\wsgi.py
+cfn=get_path_info
+calls=1 152
+65 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\core\handlers\wsgi.py
+fn=<genexpr>
+140 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\core\handlers\wsgi.py
+fn=__call__
+129 0
+cfl=C:\Program Files\Python39\lib\wsgiref\handlers.py
+cfn=start_response
+calls=1 225
+129 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\core\handlers\wsgi.py
+cfn=<genexpr>
+calls=1 140
+129 0
+cfl=C:\Program Files\Python39\lib\wsgiref\util.py
+cfn=__init__
+calls=1 14
+129 0
+cfl=C:\Program Files\Python39\lib\_collections_abc.py
+cfn=__len__
+calls=1 805
+129 0
+cfn=<method 'values' of 'dict' objects>
+calls=1 0
+129 0
+cfl=C:\Program Files\Python39\lib\_collections_abc.py
+cfn=__iter__
+calls=5 849
+129 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\core\handlers\wsgi.py
+cfn=__init__
+calls=1 65
+129 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\contrib\staticfiles\handlers.py
+cfn=get_response
+calls=1 51
+129 3
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\http\response.py
+cfn=reason_phrase
+calls=1 127
+129 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\http\response.py
+cfn=items
+calls=1 186
+129 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\urls\base.py
+cfn=set_script_prefix
+calls=1 98
+129 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\dispatch\dispatcher.py
+cfn=send
+calls=1 159
+129 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\core\handlers\wsgi.py
+cfn=get_script_name
+calls=1 159
+129 0
+cfn=<built-in method builtins.getattr>
+calls=1 0
+129 0
+cfn=<method 'get' of 'dict' objects>
+calls=1 0
+129 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\core\handlers\wsgi.py
+fn=get_path_info
+152 0
+cfn=<method 'decode' of 'bytes' objects>
+calls=2 0
+152 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\core\handlers\wsgi.py
+cfn=get_bytes_from_wsgi
+calls=2 190
+152 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\utils\encoding.py
+cfn=repercent_broken_unicode
+calls=2 226
+152 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\core\handlers\wsgi.py
+fn=get_script_name
+159 0
+cfn=<method 'decode' of 'bytes' objects>
+calls=2 0
+159 0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\core\handlers\wsgi.py
+cfn=get_bytes_from_wsgi
+calls=6 190
+159 0
+
+fl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\core\handlers\wsgi.py
+fn=get_bytes_from_wsgi
+190 0
+cfn=<method 'encode' of 'str' objects>
+calls=8 0
+190 0
+cfn=<method 'get' of 'dict' objects>
+calls=8 0
+190 0
+
+fl=C:\Program Files\Python39\lib\wsgiref\handlers.py
+fn=start_response
+225 0
+cfn=<method 'isdigit' of 'str' objects>
+calls=1 0
+225 0
+cfl=C:\Program Files\Python39\lib\wsgiref\util.py
+cfn=is_hop_by_hop
+calls=4 170
+225 0
+cfl=C:\Program Files\Python39\lib\wsgiref\headers.py
+cfn=__init__
+calls=1 31
+225 0
+cfl=C:\Program Files\Python39\lib\wsgiref\handlers.py
+cfn=_convert_string_type
+calls=9 254
+225 0
+cfn=<built-in method builtins.len>
+calls=1 0
+225 0
+
+fl=C:\Program Files\Python39\lib\wsgiref\handlers.py
+fn=_convert_string_type
+254 0
+
+fl=C:\Program Files\Python39\lib\wsgiref\util.py
+fn=__init__
+14 0
+cfn=<built-in method builtins.hasattr>
+calls=1 0
+14 0
+
+fl=C:\Program Files\Python39\lib\wsgiref\util.py
+fn=is_hop_by_hop
+170 0
+cfn=<method '__contains__' of 'set' objects>
+calls=4 0
+170 0
+cfn=<method 'lower' of 'str' objects>
+calls=4 0
+170 0
+
+fl=C:\Program Files\Python39\lib\wsgiref\headers.py
+fn=__init__
+31 0
+cfl=C:\Program Files\Python39\lib\wsgiref\headers.py
+cfn=_convert_string_type
+calls=8 41
+31 0
+
+fl=C:\Program Files\Python39\lib\wsgiref\headers.py
+fn=_convert_string_type
+41 0
+
+fn=<built-in method __new__ of type object at 0x00007FFBF790CC60>
+0  0
+
+fn=<built-in method _abc._abc_instancecheck>
+0  0
+
+fn=<method 'clear' of 'collections.deque' objects>
+0  0
+
+fn=<method 'match' of 're.Pattern' objects>
+0  0
+
+fn=<method 'groups' of 're.Match' objects>
+0  0
+
+fn=<built-in method _stat.S_ISDIR>
+0  0
+
+fn=<built-in method fromtimestamp>
+0  0
+
+fn=<method 'timetuple' of 'datetime.datetime' objects>
+0  0
+
+fn=<built-in method nt.stat>
+0  1
+cfl=C:\Program Files\Python39\lib\pathlib.py
+cfn=__fspath__
+calls=3 752
+0 0
+
+fn=<built-in method nt.open>
+0  0
+cfl=C:\Program Files\Python39\lib\pathlib.py
+cfn=__fspath__
+calls=1 752
+0 0
+
+fn=<built-in method nt._getfullpathname>
+0  0
+cfl=C:\Program Files\Python39\lib\pathlib.py
+cfn=__fspath__
+calls=1 752
+0 0
+
+fn=<built-in method nt.fspath>
+0  0
+cfl=C:\Program Files\Python39\lib\pathlib.py
+cfn=__fspath__
+calls=1 752
+0 0
+
+fn=<method '__exit__' of '_thread.lock' objects>
+0  0
+
+fn=<method '__exit__' of '_thread.RLock' objects>
+0  0
+
+fn=<built-in method _thread.get_ident>
+0  0
+
+fn=<built-in method io.open>
+0  0
+cfl=C:\Program Files\Python39\lib\pathlib.py
+cfn=__fspath__
+calls=1 752
+0 0
+cfl=C:\Program Files\Python39\lib\pathlib.py
+cfn=_opener
+calls=1 1118
+0 0
+
+fn=<method 'decode' of 'bytes' objects>
+0  0
+
+fn=<method 'get' of 'dict' objects>
+0  0
+
+fn=<method 'items' of 'dict' objects>
+0  0
+
+fn=<method 'values' of 'dict' objects>
+0  0
+
+fn=<method 'append' of 'list' objects>
+0  0
+
+fn=<method 'reverse' of 'list' objects>
+0  0
+
+fn=<method '__contains__' of 'set' objects>
+0  0
+
+fn=<method 'encode' of 'str' objects>
+0  0
+
+fn=<method 'replace' of 'str' objects>
+0  0
+
+fn=<method 'split' of 'str' objects>
+0  0
+
+fn=<method 'join' of 'str' objects>
+0  0
+
+fn=<method 'find' of 'str' objects>
+0  0
+
+fn=<method 'lower' of 'str' objects>
+0  0
+
+fn=<method 'lstrip' of 'str' objects>
+0  0
+
+fn=<method 'rfind' of 'str' objects>
+0  0
+
+fn=<method 'rstrip' of 'str' objects>
+0  0
+
+fn=<method 'rpartition' of 'str' objects>
+0  0
+
+fn=<method 'strip' of 'str' objects>
+0  0
+
+fn=<method 'upper' of 'str' objects>
+0  0
+
+fn=<method 'startswith' of 'str' objects>
+0  0
+
+fn=<method 'endswith' of 'str' objects>
+0  0
+
+fn=<method 'isdigit' of 'str' objects>
+0  0
+
+fn=<method 'format' of 'str' objects>
+0  0
+
+fn=<built-in method builtins.getattr>
+0  0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\asgiref\local.py
+cfn=__getattr__
+calls=2 101
+0 0
+
+fn=<built-in method builtins.hasattr>
+0  0
+
+fn=<built-in method builtins.id>
+0  0
+
+fn=<built-in method builtins.isinstance>
+0  0
+cfl=C:\Program Files\Python39\lib\abc.py
+cfn=__instancecheck__
+calls=1 117
+0 0
+
+fn=<built-in method builtins.iter>
+0  0
+
+fn=<built-in method builtins.len>
+0  0
+cfl=E:\GeekBrains\opt_django_framework\venv\lib\site-packages\django\utils\datastructures.py
+cfn=__len__
+calls=1 318
+0 0
+
+fn=<built-in method sys.getrecursionlimit>
+0  0
+
+fn=<built-in method sys.intern>
+0  0
+
+fn=<method 'disable' of '_lsprof.Profiler' objects>
+0  0
+
+fn=<built-in method _asyncio.get_running_loop>
+0  0
+
