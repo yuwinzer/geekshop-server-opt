@@ -17,6 +17,8 @@ import environ
 env = environ.Env()
 environ.Env.read_env()
 
+from django.contrib.messages import constants as messages
+
 
 _locale._getdefaultlocale = (lambda *args: ['en_US', 'utf8'])
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -79,6 +81,14 @@ MIDDLEWARE = [
     'social_django.middleware.SocialAuthExceptionMiddleware',
     'debug_toolbar.middleware.DebugToolbarMiddleware'
 ]
+
+MESSAGE_TAGS = {
+    messages.DEBUG: 'alert-info',
+    messages.INFO: 'alert-info',
+    messages.SUCCESS: 'alert-success',
+    messages.WARNING: 'alert-warning',
+    messages.ERROR: 'alert-danger',
+}
 
 ROOT_URLCONF = 'geekshop.urls'
 

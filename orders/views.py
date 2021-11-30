@@ -26,6 +26,7 @@ class UserVerifyMixin:
     def get(self, request, *args, **kwargs):
         if not self.user_verify_function():
             messages.warning(request, "У вас нет доступа к чужим заказам!")
+            messages.success(request, "Хорошая попытка !")
             return HttpResponseRedirect('/')
         return super().get(request, *args, **kwargs)
 
