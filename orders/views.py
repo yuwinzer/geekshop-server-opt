@@ -3,6 +3,7 @@ from django.http import JsonResponse
 from django.shortcuts import get_object_or_404, HttpResponseRedirect
 from django.urls import reverse, reverse_lazy
 from django.db import transaction
+from django.contrib import messages
 
 from django.forms import inlineformset_factory
 
@@ -16,6 +17,17 @@ from orders.forms import OrderItemForm
 from django.dispatch import receiver
 
 
+class UserVerifyMixin:
+    def user_verify_function(self):
+        pk = self.kwargs.get('pk')
+        obj = get_object_or_404(Order, pk=pk)
+        return self.request.user.is_superuser or self.request.user == obj.user
+
+    def get(self, request, *args, **kwargs):
+        if not self.user_verify_function():
+            messages.warning(request, "У вас нет доступа к чужим заказам!")
+            return HttpResponseRedirect('/')
+        return super().get(request, *args, **kwargs)
 
 
 class OrderList(ListView):
@@ -25,10 +37,11 @@ class OrderList(ListView):
         return Order.objects.filter(user=self.request.user)
 
 
-class OrderCreate(CreateView):
+class OrderCreate(UserVerifyMixin, CreateView):
     model = Order
     fields = []
     success_url = reverse_lazy('orders:orders_list')
+
 
     def get_context_data(self, **kwargs):
         context = super(OrderCreate, self).get_context_data(**kwargs)
@@ -70,11 +83,11 @@ class OrderCreate(CreateView):
 
         return super(OrderCreate, self).form_valid(form)
 
-
-class OrderUpdate(UpdateView):
+class OrderUpdate(UserVerifyMixin, UpdateView):
     model = Order
     fields = []
     success_url = reverse_lazy('orders:orders_list')
+
 
     def get_context_data(self, **kwargs):
         context = super(OrderUpdate, self).get_context_data(**kwargs)
@@ -108,12 +121,12 @@ class OrderUpdate(UpdateView):
         return super(OrderUpdate, self).form_valid(form)
 
 
-class OrderDelete(DeleteView):
+class OrderDelete(UserVerifyMixin, DeleteView):
     model = Order
     success_url = reverse_lazy('orders:orders_list')
 
 
-class OrderRead(DetailView):
+class OrderRead(UserVerifyMixin, DetailView):
     model = Order
     extra_context = {'title': 'заказ/просмотр'}
 
