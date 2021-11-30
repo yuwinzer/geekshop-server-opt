@@ -21,6 +21,8 @@ def login(request):
             if user and user.is_active:
                 auth.login(request, user)
                 return HttpResponseRedirect(reverse('index'))
+        else:
+            messages.error(request, form.errors)
     else:
         form = UserLoginForm()
     context = {'title': 'GeekShop - Авторизация', 'form': form}
@@ -37,8 +39,9 @@ def registration(request):
                                           'Для завершения регистрации перейдите по ссылке в письме')
                 return HttpResponseRedirect(reverse('users:login'))
             else:
-                messages.error(request, 'Ошибка при отправке письма!')
+                messages.error(request, 'Ошибка при отправке письма!' + form.errors)
                 return HttpResponseRedirect(reverse('users:registration'))
+        messages.error(request, form.errors)
     else:
         form = UserRegistrationForm()
     context = {'title': 'GeekShop - Регистрация', 'form': form}
@@ -57,10 +60,10 @@ def profile(request):
             messages.success(request, 'Данные успешно изменены')
         else:
             if form.is_valid():
-                messages.error(request, 'Ошибка основных данных: ' + str(profile_form.errors))
+                messages.error(request, profile_form.errors)
                 print(profile_form.errors)
             else:
-                messages.error(request, 'Ошибка: ' + str(form.errors))
+                messages.error(request, form.errors)
                 print(form.errors)
         return HttpResponseRedirect(reverse('users:profile'))
     else:
@@ -92,15 +95,17 @@ def send_verify_email(user):
 def verify(request, email, activation_key):
     try:
         user = User.objects.get(email=email)
-        if user.activation_key == activation_key and not user.is_activation_key_expired:
+        exp, mess = user.is_activation_key_expired
+        if user.activation_key == activation_key and not exp:
             user.is_active = True
             user.save()
             auth.login(request, user, backend='django.contrib.auth.backends.ModelBackend')
             messages.success(request, 'Вы успешно зарегистрированы!')
             return render(request, 'products/index.html')
         else:
-            messages.error(request, 'Cсылка для подтверждения регистрации не действительна!')
-            return render(request, 'users/registration.html')
+            messages.error(request, 'Cсылка для подтверждения регистрации не действительна!\n' +
+                           mess)
+            return render(request, 'users/verification.html')
     except Exception as e:
         print(f'error user registration: {e.args}')
         return HttpResponseRedirect(reverse('index'))
