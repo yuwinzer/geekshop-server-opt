@@ -12,7 +12,7 @@ from baskets.models import Basket
 
 
 def index(request):
-    context = {'title': 'GeekShop111',
+    context = {'title': 'GeekShop',
                'date': datetime.now()}
     return render(request, 'products/index.html', context)
 
