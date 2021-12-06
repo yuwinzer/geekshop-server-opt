@@ -38,7 +38,7 @@ class OrderList(ListView):
         return Order.objects.filter(user=self.request.user)
 
 
-class OrderCreate(UserVerifyMixin, CreateView):
+class OrderCreate(CreateView):
     model = Order
     fields = []
     success_url = reverse_lazy('orders:orders_list')
