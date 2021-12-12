@@ -4,3 +4,5 @@ __pycache__/
 media
 /reservdb.sqlite3
 /geekshop/.env
+/upgrade_wtf/
+
